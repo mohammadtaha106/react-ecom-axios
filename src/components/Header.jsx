@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <div className="navbar  mb-4  bg-orange-200">
@@ -19,23 +21,22 @@ function Header() {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
+        className=" menu menu-sm dropdown-content ">
+        <li className="text-5xl font-bold text-orange-500"><Link to={"/products"}>Products </Link></li>
+         
         
-        <li><a>Item 3</a></li>
       </ul>
     </div>
     <a className="btn btn-ghost text-3xl text-orange-600"  style={{ fontFamily: 'Cursive, sans-serif' }}>&lt;Ecom /&gt;</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
+    <li><Link to={"/products"}>Products </Link></li>
      
-      <li><a>Item 3</a></li>
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className="btn">Sign In</a>
   </div>
 </div>
   );

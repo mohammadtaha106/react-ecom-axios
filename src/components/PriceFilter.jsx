@@ -20,8 +20,8 @@ console.log(priceText)
           <Slider
             step={10}
             
-            min={0}
-            max={10000} 
+            minValue={0}
+            maxValue={1000} 
             value={priceRange}
             onChange={handlePriceChange}
             color="warning"
